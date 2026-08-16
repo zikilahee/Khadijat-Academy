@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Khadijat Academy</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="./css/output.css" rel="stylesheet">
+</head>
+
+<body class="">
+
+
+  <header class="relative flex items-center justify-between h-20 bg-blue-900 px-4 sm:px-8 lg:px-16 drop-shadow-sm">
+
+  
+    <img src="images/logo1.png" alt="" class="h-8 sm:h-10 w-auto">
+
+    
+    <nav class="hidden lg:block">
+      <ul class="font-display flex items-center space-x-8 text-sm font-medium">
+        <li class="text-white hover:text-blue-400 transition"><a href="index.html" class="active">Home</a></li>
+        <li class="text-white hover:text-blue-400 transition"><a href="">About Us</a></li>
+        <li class="text-white hover:text-blue-400 transition"><a href="">Courses</a></li>
+        <li class="text-white hover:text-blue-400 transition">
+          <a href="" class="flex items-center gap-2">
+            <img src="images/shopping-cart.png" alt="" class="w-6 h-6">
+            <span>Cart</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+   
+    <div class="hidden lg:flex space-x-4 items-center">
+      <a href="login-page.html">
+        <button class="text-white border rounded-2xl px-4 py-1.5 text-sm font-light font-display hover:bg-blue-700 transition">
+          Sign In
+        </button>
+      </a>
+      <a href="login-page.html">
+        <button class="text-white bg-blue-600 text-sm font-light px-4 py-1.5 rounded-2xl hover:bg-blue-700 transition font-display">
+          Join Academy
+        </button>
+      </a>
+    </div>
+
+   
+    <input type="checkbox" id="menu-toggle" class="peer hidden">
+    <label for="menu-toggle" class="lg:hidden text-white cursor-pointer z-20">
+      <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+    </label>
+
+    
+    <div class="hidden peer-checked:flex lg:hidden flex-col absolute top-20 left-0 w-full bg-blue-900 px-6 py-6 space-y-4 z-10 shadow-lg font-display">
+      <a href="index.html" class="text-white text-base font-medium">Home</a>
+      <a href="" class="text-white text-base font-medium">About Us</a>
+      <a href="" class="text-white text-base font-medium">Courses</a>
+      <a href="" class="text-white text-base font-medium flex items-center gap-2">
+        <img src="images/shopping-cart.png" alt="" class="w-5 h-5"> Cart
+      </a>
+      <a href="login-page.html">
+        <button class="w-full text-white border rounded-2xl px-4 py-2 text-sm font-light hover:bg-blue-700 transition">
+          Sign In
+        </button>
+      </a>
+      <a href="login-page.html">
+        <button class="w-full text-white bg-blue-600 text-sm font-light px-4 py-2 rounded-2xl hover:bg-blue-700 transition">
+          Join Academy
+        </button>
+      </a>
+    </div>
+
+  </header>
+
+  
+  <section class="relative bg-blue-900 pb-16 overflow-hidden">
+
+    <div class="flex flex-col lg:flex-row items-center px-6 sm:px-10 lg:px-16 pt-10 lg:pt-4  gap-10">
+
+      
+      <div class="relative flex-1 w-full order-2 lg:order-1">
+
+        <img src="images/grad-cap.png" alt="" class="hidden lg:block w-full h-200 opacity-90">
+
+        <div class="lg:absolute lg:inset-0 flex flex-col justify-start lg:pt-8 text-white text-center lg:text-left">
+          <h1 class="text-4xl sm:text-4xl md:text-5xl lg:text-7xl font-bold leading-tight font-display">
+            Learn and practice at your own pace.
+          </h1>
+
+          <p class="text-sm sm:text-base lg:text-lg mt-4 lg:mt-6 max-w-md mx-auto lg:mx-0 font-display">
+            We are here to make you achieve that journey of a seamless online learning.
+          </p>
+
+          <div class="flex w-full max-w-md mx-auto lg:mx-0 h-12 sm:h-13 mt-6 lg:mt-8 rounded-full overflow-hidden bg-blue-100">
+            <div class="flex items-center flex-1 px-4 sm:px-6">
+              <img src="images/search-normal.png" alt="" class="w-5 h-5 sm:w-6 sm:h-6 mr-3">
+              <input type="text" placeholder="Search for courses"
+                class="w-full outline-none text-gray-700 bg-transparent text-sm sm:text-base font-display">
+            </div>
+            <button class="px-4 sm:px-8 bg-blue-500 text-white text-sm sm:text-base font-medium hover:bg-blue-600 transition rounded-4xl font-display">
+              Search
+            </button>
+          </div>
+        </div>
+      </div>
+
+      
+      <div class="relative flex-1 w-full max-w-xs sm:max-w-sm lg:max-w-md order-1 lg:order-2 mx-auto">
+        <img src="images/lovely-teenage-girl-with-curly-hair-posing-yellow-tshirt-min ima.png" alt="" class="w-full h-auto">
+
+        <div class="absolute top-[10%] right-[0%] sm:right-[-6%] bg-white rounded-xl shadow-lg flex items-center gap-2 px-2 sm:px-3 py-1.5 sm:py-2">
+          <img src="images/Group 7.png" alt="" class="w-6 h-6 sm:w-8 sm:h-8">
+          <span class="text-gray-800 text-xs sm:text-sm font-medium whitespace-nowrap font-display">250k Courses</span>
+        </div>
+
+        <div class="absolute bottom-[5%] right-[0%] sm:right-[-6%] bg-white rounded-xl shadow-lg flex items-center gap-2 px-2 sm:px-3 py-1.5 sm:py-2">
+          <img src="images/Group 10.png" alt="" class="w-6 h-6 sm:w-8 sm:h-8">
+          <span class="text-gray-800 text-xs sm:text-sm font-medium whitespace-nowrap font-display">Welldone, enrolled!</span>
+        </div>
+      </div>
+
+    </div>
+
+    <svg class="block absolute bottom-0 left-0 w-full" viewBox="0 0 1440 120" preserveAspectRatio="none" style="transform: translateY(1px);">
+      <path fill="#ffffff" d="M0,0 C480,120 960,120 1440,0 L1440,120 L0,120 Z"></path>
+    </svg>
+
+  </section>
+
+  
+  <section class="bg-white h-auto">
+    <div class="flex flex-col items-center justify-center text-center py-6 px-6 space-y-3 font-bold font-display">
+      <p class="text-sm sm:text-base">
+        <span class="text-blue-400">OUR</span> FEATURES
+      </p>
+      <p class="text-sm sm:text-base max-w-xl font-display">
+        You will take your career to the next level with Khadijat Academy by getting world class resources
+      </p>
+    </div>
+
+    <div class="bg-white grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 px-6 sm:px-10 lg:px-20 py-10 justify-items-center">
+
+      <div class="w-full max-w-70 h-auto min-h-65 bg-gray-100 rounded-2xl shadow-2xl p-4">
+
+        
+
+        <div class="flex flex-col justify-center items-center">
+
+          <img src="images/Group 79.png" alt="" class="mb-0 h-32">
+
+          <p class="text-blue-400 font-display font-semibold">
+            Unlimited Access to courses
+          </p>
+
+          <p class="text-sm text-center font-display font-medium">
+            With over 48 hours of lessons available in 24/7, you will learn anything you need to know to upskill yourself in your area of interest.
+          </p>
+        </div>
+
+      </div>
+       <div class="w-full max-w-70 h-auto min-h-65 bg-gray-100 rounded-2xl shadow-2xl p-4">
+
+        
+
+        <div class="flex flex-col justify-center items-center">
+
+          <img src="images/Group 80.png" alt="" class="mb-0 h-32">
+
+          <p class="text-blue-400 font-display font-semibold">
+            Taught by top instructors.
+          </p>
+
+          <p class="text-sm text-center font-display font-medium">
+            With over 48 hours of lessons available in 24/7, you will learn anything you need to know to upskill yourself in your area of interest.
+          </p>
+        </div>
+
+      </div>
+
+       <div class="w-full max-w-70 h-auto min-h-65 bg-gray-100 rounded-2xl shadow-2xl p-4">
+
+        
+
+        <div class="flex flex-col justify-center items-center">
+
+          <img src="images/Group 81.png" alt="" class="mb-0 h-32">
+
+          <p class="text-blue-400 font-display font-semibold">
+            Learning at your pace
+          </p>
+
+          <p class="text-sm text-center font-display font-medium">
+            With over 48 hours of lessons available in 24/7, you will learn anything you need to know to upskill yourself in your area of interest.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <section class="bg-red-100">
+    <div class="flex flex-col items-center justify-center text-center py-6 px-6 space-y-3 font-bold font-display">
+      <p class="text-sm sm:text-base">
+        <span class="text-blue-400">Explore</span> Our Courses
+      </p>
+      <p class="text-sm sm:text-base max-w-xl font-display font-light">
+        You will take your career to the next level with Khadijat Academy by getting world class resources
+      </p>
+    </div>
+
+    <div class="flex flex-wrap items-center justify-center gap-3 sm:gap-4 px-6">
+      <button class="bg-blue-200 px-3 rounded-2xl py-1.5 font-display text-blue-900 font-bold hover:bg-blue-500 hover:text-white transition text-sm sm:text-base">
+        Data Analysis
+      </button>
+
+      <button class="bg-blue-200 px-3 rounded-2xl py-1.5 font-display text-blue-900 font-bold hover:bg-blue-500 hover:text-white transition text-sm sm:text-base">
+        Data Management
+      </button>
+
+      <button class="bg-blue-200 px-3 rounded-2xl py-1.5 font-display text-blue-900 font-bold hover:bg-blue-500 hover:text-white transition text-sm sm:text-base">
+        Short Courses
+      </button>
+
+      <button class="bg-blue-200 px-3 rounded-2xl py-1.5 font-display text-blue-900 font-bold hover:bg-blue-500 hover:text-white transition text-sm sm:text-base">
+        Other Workshop
+      </button>
+    </div>
+
+    <div class="bg-red-100 grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-6 px-6 sm:px-10 lg:px-20 py-10 justify-items-center ">
+
+      <div class="w-full max-w-70 h-auto bg-gray-100 rounded-2xl shadow-2xl overflow-hidden">
+
+
+        <img src="images/Rectangle 17.png" alt="" class="h-[210px] w-full object-cover p-4">
+
+        <div class="p-4">
+          
+          <div class="flex items-start justify-between gap-4">
+            <h3 class="text-[15px] font-medium text-gray-700 font-display">
+              Fundamentals of Data Analysis(Hands-on practical)
+            </h3>
+
+            <span class="text-pink-600 font-display font text-xl font-semibold">
+              ₦9,000
+            </span>
+          </div>
+
+          <div class="mt-6 flex items-center justify-between">
+
+            <div class="flex items-center gap-2">
+              <img src="images/Ellipse 8.png" alt="" class="h-10 w-10 object-cover">
+
+              <span class="text-sm text-gray-400 font-display">
+                Kenny Ibrahim
+              </span>
+            </div>
+
+            <span class="text-sm text-gray-400">
+              ⭐5
+            </span>
+          </div>
+
+
+
+        </div>
+
+
+
+      </div>
+
+      <div class="w-full max-w-70 h-auto bg-gray-100 rounded-2xl shadow-2xl overflow-hidden">
+
+
+        <img src="images/Rectangle 17-2.png" alt="" class="h-[210px] w-full object-cover p-4">
+
+        <div class="p-4">
+          
+          <div class="flex items-start justify-between gap-4">
+            <h3 class="text-[15px] font-medium text-gray-700 font-display">
+              Mastery of Data Analysis
+            </h3>
+
+            <span class="text-pink-600 font-display font text-xl font-semibold">
+              ₦9,000
+            </span>
+          </div>
+
+          <div class="mt-6 flex items-center justify-between">
+
+            <div class="flex items-center gap-2">
+              <img src="images/Ellipse 8.png" alt="" class="h-10 w-10 object-cover">
+
+              <span class="text-sm text-gray-400 font-display">
+                Kenny Ibrahim
+              </span>
+            </div>
+
+            <span class="text-sm text-gray-400">
+              ⭐5
+            </span>
+          </div>
+
+
+
+        </div>
+
+
+
+      </div>
+
+      <div class="w-full max-w-70 h-auto bg-gray-100 rounded-2xl shadow-2xl overflow-hidden">
+
+
+        <img src="images/Rectangle 17-4.png" alt="" class="h-[210px] w-full object-cover p-4">
+
+        <div class="p-4">
+          
+          <div class="flex items-start justify-between gap-4">
+            <h3 class="text-[15px] font-medium text-gray-700 font-display">
+              SQL,Power Bi, R Programming
+            </h3>
+
+            <span class="text-pink-600 font-display font text-xl font-semibold">
+              ₦9,000
+            </span>
+          </div>
+
+          <div class="mt-6 flex items-center justify-between">
+
+            <div class="flex items-center gap-2">
+              <img src="images/Ellipse 8.png" alt="" class="h-10 w-10 object-cover">
+
+              <span class="text-sm text-gray-400 font-display">
+                Kenny Ibrahim
+              </span>
+            </div>
+
+            <span class="text-sm text-gray-400">
+              ⭐5
+            </span>
+          </div>
+
+
+
+        </div>
+
+
+
+      </div>
+
+      <div class="w-full max-w-70 h-auto bg-gray-100 rounded-2xl shadow-2xl overflow-hidden">
+
+
+        <img src="images/Rectangle 17-1.png" alt="" class="h-[210px] w-full object-cover p-4">
+
+        <div class="p-4">
+          
+          <div class="flex items-start justify-between gap-4">
+            <h3 class="text-[15px] font-medium text-gray-700 font-display">
+              Fundamentals of Data Analysis(Hands-on practical)
+            </h3>
+
+            <span class="text-pink-600 font-display font text-xl font-semibold">
+              ₦9,000
+            </span>
+          </div>
+
+          <div class="mt-6 flex items-center justify-between">
+
+            <div class="flex items-center gap-2">
+              <img src="images/Ellipse 8.png" alt="" class="h-10 w-10 object-cover">
+
+              <span class="text-sm text-gray-400 font-display">
+                Kenny Ibrahim
+              </span>
+            </div>
+
+            <span class="text-sm text-gray-400">
+              ⭐5
+            </span>
+          </div>
+
+
+
+        </div>
+
+
+
+      </div>
+
+      <div class="w-full max-w-70 h-auto bg-gray-100 rounded-2xl shadow-2xl overflow-hidden">
+
+
+        <img src="images/Rectangle 17-3.png" alt="" class="h-[210px] w-full object-cover p-4">
+
+        <div class="p-4">
+          
+          <div class="flex items-start justify-between gap-4">
+            <h3 class="text-[15px] font-medium text-gray-700 font-display">
+              Mastery of Data Analysis
+            </h3>
+
+            <span class="text-pink-600 font-display font text-xl font-semibold">
+              ₦9,000
+            </span>
+          </div>
+
+          <div class="mt-6 flex items-center justify-between">
+
+            <div class="flex items-center gap-2">
+              <img src="images/Ellipse 8.png" alt="" class="h-10 w-10 object-cover">
+
+              <span class="text-sm text-gray-400 font-display">
+                Kenny Ibrahim
+              </span>
+            </div>
+
+            <span class="text-sm text-gray-400">
+              ⭐5
+            </span>
+          </div>
+
+
+
+        </div>
+
+
+
+      </div>
+
+      <div class="w-full max-w-70 h-auto bg-gray-100 rounded-2xl shadow-2xl overflow-hidden">
+
+
+        <img src="images/Rectangle 17-5.png" alt="" class="h-[210px] w-full object-cover p-4">
+
+        <div class="p-4">
+          
+          <div class="flex items-start justify-between gap-4">
+            <h3 class="text-[15px] font-medium text-gray-700 font-display">
+              SQL,Power Bi, R Programming
+            </h3>
+
+            <span class="text-pink-600 font-display font text-xl font-semibold">
+              ₦9,000
+            </span>
+          </div>
+
+          <div class="mt-6 flex items-center justify-between">
+
+            <div class="flex items-center gap-2">
+              <img src="images/Ellipse 8.png" alt="" class="h-10 w-10 object-cover">
+
+              <span class="text-sm text-gray-400 font-display">
+                Kenny Ibrahim
+              </span>
+            </div>
+
+            <span class="text-sm text-gray-400">
+              ⭐5
+            </span>
+          </div>
+
+
+
+        </div>
+
+
+
+      </div>
+
+
+
+    
+
+          <div class="col-span-full flex justify-center">
+            <button class="  bg-amber-600 text-white px-3 py-2 rounded-2xl hover:bg-amber-700 transition font-display">
+              Explore All Courses
+            </button>
+          </div>
+
+    </div>
+  </section>
+
+
+<section class="bg-white h-auto flex flex-col lg:flex-row px-6 sm:px-10 lg:px-0">
+
+  <div class="flex flex-col gap-5 mt-10 lg:ml-30 text-center lg:text-left items-center lg:items-start">
+
+    <h1 class="text-blue-500 font-semibold font-display text-2xl sm:text-3xl lg:mr-18">
+      Data-Driven Resources <br class="hidden sm:block"> That Meet Your Needs.
+    </h1>
+
+    <span class="text-gray-500 text-sm sm:text-base font-display font-medium max-w-md">
+      You will take your career to the next level with Khadijat Academy
+      <br class="hidden sm:block"> by getting world class resources
+    </span>
+
+    <button class="self-center lg:self-start bg-blue-600 text-white px-4 py-2 rounded-3xl hover:bg-blue-700 transition font-display text-sm sm:text-base">
+      Explore All Courses
+    </button>
+  </div>
+
+  <div class="mt-9 flex justify-center lg:justify-start lg:ml-30">
+    <img src="images/Group 29.png" alt="" class="max-w-full h-auto">
+  </div>
+
+  <div class="flex-1">
+    
+  </div>
+
+</section>
+
+
+<section class="bg-white h-auto py-10">
+
+  <div class="flex flex-col items-center justify-center text-center py-6 px-6 space-y-2 font-bold font-display">
+    <p class="text-sm sm:text-base">
+      What Our <span class="text-blue-400">Students</span> Say
+    </p>
+    <p class="text-sm sm:text-base max-w-xl font-display font-light">
+      Here are what our online students have to say about Khadijat Academy
+    </p>
+  </div>
+
+  <div class="flex flex-col lg:flex-row items-center justify-center gap-8 lg:gap-10 px-6 lg:px-0">
+
+    <div class="w-full max-w-80 h-auto bg-gray-100 rounded-2xl shadow-2xl border-l-6 border-l-pink-700 p-4">
+
+      <p class="font-display text-sm sm:text-base text-gray-500">
+        "Thank you so much for your help. It's exactly what I've been looking for. You won't regret it. It really saves me time and effort. KhadijatAcademy is exactly what our business has been lacking."
+      </p>
+
+      <div class="flex items-center justify-between mt-4">
+        <p class="font-display font-medium text-sm sm:text-base">
+          Jessica Luo
+        </p>
+
+        <p class="text-sm sm:text-base">
+          ⭐⭐⭐⭐⭐
+        </p>
+      </div>
+
+    </div>
+
+    <img src="images/Mask Group.png" alt="" class="w-48 sm:w-64 lg:w-auto h-auto lg:h-90">
+
+    <button class="bg-gray-200 rounded-3xl shadow-2xl px-6 py-3 hover:bg-blue-700 transition hover:text-white font-display font-medium border-2 border-blue-500 text-sm sm:text-base">
+      Read More
+    </button>
+
+  </div>
+</section>
+
+ <footer class="bg-blue-950 py-12 px-6">
+
+  <div class="max-w-4xl mx-auto flex flex-col items-center text-center">
+
+    
+    <div class="flex items-center gap-4 flex-wrap justify-center">
+      <div class="flex items-center gap-2">
+        <img src="images/logo1.png" alt="" class="h-6 w-auto">
+        <span class="text-white font-display font-semibold text-base"></span>
+      </div>
+      <span class="hidden sm:block h-5 w-px bg-gray-500"></span>
+      <span class="text-blue-300 text-sm font-display">Online course learning platform</span>
+    </div>
+
+    
+    <h2 class="text-white font-display font-semibold text-lg sm:text-xl mt-8">
+      Subscribe to get our Newsletter
+    </h2>
+
+    
+    <form class="flex w-full max-w-md mt-6 rounded-full overflow-hidden border border-blue-400/40 bg-transparent">
+      <input type="email" placeholder="Your Email"
+        class="flex-1 min-w-0 bg-transparent text-white placeholder-blue-300 text-sm px-5 py-3 outline-none font-display">
+      <button type="submit"
+        class="bg-blue-600 text-white text-sm font-medium font-display px-6 sm:px-8 py-3 hover:bg-blue-700 transition whitespace-nowrap rounded-3xl">
+        Subscribe
+      </button>
+    </form>
+
+   
+    <div class="flex flex-wrap items-center justify-center gap-4 sm:gap-6 mt-10 text-blue-300 text-sm font-display">
+      <a href="" class="hover:text-white transition">Careers</a>
+      <span class="text-blue-500">|</span>
+      <a href="" class="hover:text-white transition">Privacy Policy</a>
+      <span class="text-blue-500">|</span>
+      <a href="" class="hover:text-white transition">Terms &amp; Conditions</a>
+    </div>
+
+    
+    <p class="text-blue-400 text-xs sm:text-sm mt-6 font-display">
+      © 2023 KhadijatAcademy
+    </p>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
